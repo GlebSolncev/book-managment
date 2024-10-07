@@ -2,6 +2,7 @@
 
 echo "Composer installing"
 composer install --no-interaction --prefer-dist --optimize-autoloader
+chown -R www-data:www-data /var/www/book
 
 echo "Copy env"
 cp .env.example .env
