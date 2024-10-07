@@ -14,8 +14,5 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 RUN echo "pcov.enabled=0" > /usr/local/etc/php/conf.d/pcov.ini \
     && echo "pcov.directory=/var/www/book" >> /usr/local/etc/php/conf.d/pcov.ini
 
-RUN chown -R www-data:www-data /var/www/book/storage /var/www/book/bootstrap/cache \
-    && chmod -R 775 /var/www/book/storage /var/www/book/bootstrap/cache \
-
 EXPOSE 9000
 CMD ["php-fpm"]
