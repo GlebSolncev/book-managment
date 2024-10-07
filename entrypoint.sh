@@ -23,4 +23,5 @@ echo "Generate swagger documentation"
 php artisan l5-swagger:generate
 
 php artisan db:seed BookSeeder
+chown -R www-data:www-data /var/www/book
 
