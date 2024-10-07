@@ -12,7 +12,7 @@ This project is a REST API for managing books, developed using the Laravel frame
 #### Clone the Repository
 Clone the project repository to your local machine using the following command:
 ```shell
-git clone https://github.com/your-username/your-repository.git your-repository
+git clone https://github.com/GlebSolncev/book-managment your-repository
 ```
 
 #### Navigate to the Project Directory
